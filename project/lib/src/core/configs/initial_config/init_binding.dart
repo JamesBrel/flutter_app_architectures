@@ -108,7 +108,6 @@ class InitBinding extends Bindings {
     //   UpdateService(
     //     Get.find<ShorebirdUpdater>(),
     //     Get.find<TerminateRestart>(),
-    //     Get.find<AppRouter>(),
     //   ),
     // );
 
