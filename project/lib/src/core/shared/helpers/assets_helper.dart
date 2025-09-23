@@ -28,8 +28,8 @@ class AssetsHelper {
       debugPrint('Cache initialization error: $e');
       rethrow;
     } finally {
-      await preCacheImages();
-      await preCacheFonts();
+      await _preCacheImages();
+      await _preCacheFonts();
     }
   }
 
@@ -60,7 +60,7 @@ class AssetsHelper {
     }
   }
 
-  static Future<void> preCacheImages() async {
+  static Future<void> _preCacheImages() async {
     if (_images.isNotEmpty) {
       for (var image in _images) {
         await _downloadAsset(image);
@@ -68,7 +68,7 @@ class AssetsHelper {
     }
   }
 
-  static Future<void> preCacheFonts() async {
+  static Future<void> _preCacheFonts() async {
     if (_fonts.isNotEmpty) {
       for (var font in _fonts) {
         var path = font['path'];

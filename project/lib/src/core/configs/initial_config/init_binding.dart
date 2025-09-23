@@ -24,7 +24,7 @@ import '../../services/image/image_service.dart';
 import '../../services/jwt/jwt_service.dart';
 import '../../services/security/security_service.dart';
 import '../../services/supabase/supabase_service.dart';
-import '../../services/update/update_service.dart';
+import '../../services/update/updater_service.dart';
 import '../../shared/constants/envs_const.dart';
 
 class InitBinding extends Bindings {
@@ -104,11 +104,10 @@ class InitBinding extends Bindings {
     // );
     // Get.put<JwtService>(JwtService());
     // Get.put<HttpDioService>(HttpDioService(Get.find<Dio>()));
-    // Get.put<UpdateService>(
-    //   UpdateService(
+    // Get.put<UpdaterService>(
+    //   UpdaterService(
     //     Get.find<ShorebirdUpdater>(),
     //     Get.find<TerminateRestart>(),
-    //     Get.find<AppRouter>(),
     //   ),
     // );
 

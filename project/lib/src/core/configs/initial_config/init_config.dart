@@ -155,10 +155,10 @@ class InitConfig {
   //   // }
   // }
 
-  static Future<void> _precacheSecondaryAssets() async {
-    LogKit.infoLog('Precaching fonts assets...');
-    await AssetsHelper.preCacheFonts();
-  }
+  // static Future<void> _precacheSecondaryAssets() async {
+  //   LogKit.infoLog('Precaching fonts assets...');
+  //   await AssetsHelper.preCacheFonts();
+  // }
 
   //*--------------------------------------------------
   //* Utilitaires d'exécution
