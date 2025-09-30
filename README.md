@@ -36,33 +36,28 @@ the predefined files, such as welcome.dart in the front end and other folders, a
 
    ```yaml
    -----------SeUp Dependencies------------
-   intl: ^last version
-   icons_launcher: ^last version
-   flutter_screenutil: ^latest version
-   flutter_native_splash: ^latest version
-   equatable: ^last version
-   get: ^last version
-   multiple_result: ^last version
-   shorebird_code_push: ^last version
-   flutter_svg: ^last version
-   auto_route: ^last version
-   terminate_restart: ^last version
-   fluttertoast: ^last version
-   toastification: ^last version
-   faker: ^last version
-   gadgets:
-    git:
-      url: https://github.com/JamesBrel/dart_gadgets.git
-      ref: vlast version
-      path: packages/gadgets
-   ----------------------------
-   ```
- - <span style="color:yellow">step_1</span>: Installation of dev_dependencies
-    Inside the pubspec.yaml file, you must integrate firstly the following packages :
+   dependencies:
+      intl: ^last version
+      icons_launcher: ^last version
+      flutter_screenutil: ^latest version
+      flutter_native_splash: ^latest version
+      equatable: ^last version
+      get: ^last version
+      shorebird_code_push: ^last version
+      flutter_svg: ^last version
+      auto_route: ^last version
+      terminate_restart: ^last version
+      toastification: ^last version
+      gadgets:
+      git:
+         url: https://github.com/JamesBrel/dart_gadgets.git
+         ref: vlast version
+         path: packages/gadgets
 
-   ```yaml
-   auto_route_generator: ^latest version
-   build_runner: ^latest version
+   dev_dependencies:
+      auto_route_generator: ^latest version
+      build_runner: ^latest version
+   ----------------------------
    ```
     these packages will allow you to easily activate the various files imported into the architecture.
     then, you just have to follow, the readme.md in the folder **assets**
