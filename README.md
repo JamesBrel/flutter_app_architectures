@@ -1,4 +1,4 @@
-# Flutter Mobile : MVC And Feature Architecture
+# Flutter Mobile : MVB And Feature Architecture with Bloc
 
 ### Author : James Brel
 
@@ -19,7 +19,7 @@
 ```
 📦features
  ┗ 📂greeting
- ┃ ┣ 📂controllers
+ ┃ ┣ 📂Blocs
  ┃ ┗ 📂models
  ┃ ┗ 📂views
 ```
@@ -41,14 +41,17 @@ the predefined files, such as welcome.dart in the front end and other folders, a
    flutter_screenutil: ^latest version
    flutter_native_splash: ^latest version
    equatable: ^last version
-   get: ^last version
-   multiple_result: ^last version
+   flutter_bloc: ^last version
    shorebird_code_push: ^last version
    flutter_svg: ^last version
    auto_route: ^last version
    terminate_restart: ^last version
    fluttertoast: ^last version
    toastification: ^last version
+   injectable: ^last version
+   get_it: ^last version
+   slang: ^last version
+   slang_flutter: ^last version
    faker: ^last version
    gadgets:
     git:
@@ -61,8 +64,10 @@ the predefined files, such as welcome.dart in the front end and other folders, a
     Inside the pubspec.yaml file, you must integrate firstly the following packages :
 
    ```yaml
-   auto_route_generator: ^latest version
-   build_runner: ^latest version
+   auto_route_generator: ^last version
+   injectable_generator: ^last version
+   build_runner: ^last version
+   slang_build_runner: ^last version
    ```
     these packages will allow you to easily activate the various files imported into the architecture.
     then, you just have to follow, the readme.md in the folder **assets**
